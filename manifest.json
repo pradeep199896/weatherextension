@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2, 
+    "name": "My Extension",
+    "version": "1.0",
+    "content_scripts":[
+      {
+        "matches":[
+          "https://www.google.com/*"
+        ],
+    
+        "js":["name.js"]
+      
+      }
+    ],
+    "chrome_url_overrides":{
+          "newtab":"extension.html"
+      }
+  }
